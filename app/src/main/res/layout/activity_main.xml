@@ -7,6 +7,12 @@
     android:background="@color/colorPrimaryDark"
     tools:context="com.example.shakirul.currencyconverter.MainActivity">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/kenyacurrency"
+        />
+
     <EditText
         android:id="@+id/usd"
         android:layout_width="match_parent"
