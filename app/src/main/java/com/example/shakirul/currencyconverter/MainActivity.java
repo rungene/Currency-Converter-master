@@ -1,14 +1,11 @@
 package com.example.shakirul.currencyconverter;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.text.InputType;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-
-import static android.R.id.input;
-import static java.lang.Integer.parseInt;
 
 public class MainActivity extends AppCompatActivity {
     float a;
@@ -22,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    void convertUsdToBdt()
+    void convertUsdToKes()
     {  EditText usd= (EditText) findViewById(R.id.usd);
         usd.setInputType(InputType.TYPE_CLASS_NUMBER);
 
@@ -30,25 +27,26 @@ public class MainActivity extends AppCompatActivity {
         bdt.setInputType(InputType.TYPE_CLASS_NUMBER);
 
         double a=Integer.parseInt(usd.getText().toString());
-        double result=a*84.15;
+        //
+        double result=a*100;
         bdt.setText(String.valueOf(result));
 
     }
 
-    void convertBdtToUsd()
+    void convertKesToUsd()
     {  EditText usd= (EditText) findViewById(R.id.usd);
         usd.setInputType(InputType.TYPE_CLASS_NUMBER);
         EditText  bdt=(EditText) findViewById(R.id.bdt);
         bdt.setInputType(InputType.TYPE_CLASS_NUMBER);
 
         double a=Integer.parseInt(bdt.getText().toString());
-        double result=a/84.15;
+        double result=a/100;
         usd.setText(String.valueOf(result));
     }
 
     public void click(View view)
     {
-        convertUsdToBdt();
+        convertUsdToKes();
         Button b2=(Button) findViewById(R.id.submit2);
         b2.setEnabled(false);
     }
@@ -70,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
     {
         Button b1=(Button) findViewById(R.id.submit);
         b1.setEnabled(false);
-        convertBdtToUsd();
+        convertKesToUsd();
     }
 
 

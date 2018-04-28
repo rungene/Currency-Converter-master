@@ -41,7 +41,7 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/usd"
         android:onClick="click"
-        android:text="USD  to BDT"
+        android:text="USD  to KES"
         tools:ignore="HardcodedText" />
 
     <Button
@@ -52,7 +52,7 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/bdt"
         android:onClick="click2"
-        android:text="BDT to USD"
+        android:text="KES to USD"
         tools:ignore="HardcodedText" />
 
     <Button
@@ -75,7 +75,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="25dp"
-        android:text="1USD = 84.15 BDT"
+        android:text="1USD = 100 KES"
         tools:ignore="HardcodedText" />
 </RelativeLayout>
 
